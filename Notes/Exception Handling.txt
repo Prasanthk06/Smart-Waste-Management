@@ -1,0 +1,33 @@
+Exception handling in java:
+used to handle run time error
+Two types of throwable - error and exceptions 
+error - cant be handle
+exceptions - can be handle 
+exceptions - checked and unchecked exceptions
+Keywords in exceptions handling:
+try and catch and  finally and  throw and throws 
+class Main {
+    public static void main(String[] args) {
+        int A[]={1,2,4},c,b=9,d=0;
+        try
+        {
+            c=A[10];
+            
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("Yo Yo pudicthadu nathan ");
+        }
+        catch(Exception e)
+        {
+            System.out.println("Hey Hey Muditchu nathna ");
+        }
+        finally
+        {
+            System.out.println("5 laksh enaku kudunga ");
+        }
+        
+    }
+}
+
+

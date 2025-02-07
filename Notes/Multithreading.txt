@@ -1,0 +1,77 @@
+Multithreading: concurrent execution of multiple thread
+A program in execution is a process.
+And threads are Light weight process.
+A program is divided into multiple threads
+2 Ways:
+   1.extending thread class
+   2.implementing runnable interface.
+Important methods
+1.run()
+2.Start()
+class multi extends Thread
+{
+    public void run()
+    {
+        int n = 2;
+        for (int i=0;i<10;i++) {
+            System.out.println("Table of Two:"+n*i);
+        }
+    }
+}
+
+class add extends Thread
+{
+    public void run()
+    {
+        int n = 2;
+        for(int i=0;i<=10;i++)
+        {
+            System.out.println("Addition of two"+(n+i));
+        }
+    } 
+}
+
+class demo
+{
+    public static void main(String[] args)
+    {
+        multi ob = new multi();
+        ob.start();
+        add b1 = new add();
+        b1.start();
+    }
+}
+
+context Switch..... In operating System in 3rd sem
+A Multithread Program:
+Java is a concurrent langauage 
+Thread is a light weight Process
+
+import java.lang.*;
+//multithreading in java using runnable interface
+class Addition implements Runnable{
+	public void run(){
+		System.out.println("Addition of 2 from 1 to 10: \n");
+		for(int i = 1; i<=10; ++i){
+			System.out.println("2 + "+i+" = "+(2+i));
+		}
+	}
+}
+class Multiply implements Runnable{
+	public void run(){
+		System.out.println("Multiplication of 2 from 1 to 10 : \n");
+		for(int i = 1; i<=10; ++i){
+			System.out.println("2 * "+i+" = "+(2*i));
+		}
+	}
+}
+class NewMultithreading{
+	public static void main(String[ ] args){
+		Addition obj1 = new Addition();
+		Multiply obj2 = new Multiply();
+		Thread t1 = new Thread(obj1);
+		t1.start();
+		Thread t2 = new Thread(obj2);
+		t2.start();
+	}
+}
