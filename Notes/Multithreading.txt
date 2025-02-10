@@ -91,3 +91,13 @@ To set Priority=setPriority(int Priority)
 Set Name or Get name:
 setName(String Name);
 getName();
+isAlive():To check the life of the Thread.
+Inter thread communication
+3 methods
+wait();
+notify();
+notifyall();
+
+Thread Synchroniztion:
+  synchronized public function():Makes sure that one thread is achieved at one time.
+GUI Development annd Database Connectivity

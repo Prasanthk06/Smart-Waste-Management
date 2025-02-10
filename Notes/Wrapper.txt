@@ -1,0 +1,2 @@
+All the primitive datatypes have built in classes.
+
