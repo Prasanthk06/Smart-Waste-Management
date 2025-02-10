@@ -75,3 +75,19 @@ class NewMultithreading{
 		t2.start();
 	}
 }
+Life Cycle of A Threads:
+New State->Runnable(Waiting for the Processor) or Running State->Blocked State(Waiting State)->Dead State(Finished State)
+
+Sleep(Long milliseconds)
+To Display Priority:
+getPriority()
+Range 1 to 10
+3 types:
+    Max_PRIORITY(10)
+    MIN_PRIORITY(1)
+    NORM_PRIORITY(5)
+To set Priority=setPriority(int Priority)
+
+Set Name or Get name:
+setName(String Name);
+getName();
